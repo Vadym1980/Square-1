@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+<meta http-equiv="content-type" content="text/html" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Project</title>
+ <link rel="stylesheet" href="stylebr_2.css" type="text/css" />
+
+ <script type="text/javascript">
+
+ 	function insRow()
+{
+var y=document.getElementById('intable');
+var new_row = y.rows[1].cloneNode(true);
+y.appendChild( new_row );
+}
+
+function removeTRow(node) {
+  var ppnode = node.parentNode.parentNode;
+  var pppnode = ppnode.parentNode;
+  pppnode.removeChild(ppnode);
+} 
+
+    
+</script>
+
+</head>
+
+<body>
+
+<table id="main">
+
+	<tr>
+		<td id="minus"><h4>-</h4></td>
+	</tr>
+
+	<tr id="minusV" width="51" height="306" valign="top">
+		<td id="minus1"><input type="button" value="Удалить" onclick="deleteRow(this)"></td>
+	</tr>
+
+<tr>
+  <td>	
+	<table id="intable">
+		<tr id="lines">
+			<td id="blues"></td>
+			<td id="blues"></td>
+			<td id="blues"></td>
+			<td id="blues"></td>
+		<!--	 -->
+		</tr>
+
+
+		<tr id="lines">
+			<td id="blues"></td>
+			<td id="blues"></td>
+			<td id="blues"></td>
+			<td id="blues"></td>
+		</tr>
+
+		<tr id="lines">
+			<td id="blues"></td>
+			<td id="blues"></td>
+			<td id="blues"></td>
+			<td id="blues"></td>
+		</tr>
+
+		<tr id="lines">
+			<td id="blues"></td>
+			<td id="blues"></td>
+			<td id="blues"></td>
+			<td id="blues"></td>
+			
+		</tr>
+
+	</table>
+  </td>
+	
+	<tr id="plusV">
+  		<td id="plus"><input type="button" onclick="insRow()"></td>
+  	</tr>
+
+</tr>
+
+	<tr>
+		<td id="plus1"><img src="images/redsquare.png" ></td>
+	</tr>
+</table>
+
+</body>
